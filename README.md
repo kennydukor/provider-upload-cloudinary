@@ -11,14 +11,14 @@
 - [Strapi community on Discord](https://discord.strapi.io)
 - [Strapi news on Twitter](https://twitter.com/strapijs)
 
-## Installation
+<!-- ## Installation
 
 ```bash
 # using yarn
 yarn add @strapi/provider-upload-cloudinary
 
 # using npm
-npm install @strapi/provider-upload-cloudinary --save
+npm install @strapi/provider-upload-cloudinary --save -->
 ```
 
 ## Configurations
@@ -43,6 +43,7 @@ module.exports = ({ env }) => ({
         cloud_name: env('CLOUDINARY_NAME'),
         api_key: env('CLOUDINARY_KEY'),
         api_secret: env('CLOUDINARY_SECRET'),
+        api_secret: env('CLOUDINARY_FOLDER'),
       },
       actionOptions: {
         upload: {},
